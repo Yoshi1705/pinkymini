@@ -1,0 +1,126 @@
+*{
+    font-family: sans-serif;
+}
+
+
+body{
+    background-image: url(gxbg.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+
+}
+
+.container{
+    height: 346px;
+    width: 430px;
+    background-color: white;
+    padding: 44px;
+    margin: auto;
+    margin-top: 100px;
+    box-sizing: border-box;
+    
+}
+
+.logo{
+    width: 200px;
+    height: 60px;
+    margin-top: -25px;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+img{
+    width: 100%;
+    height: 100px;
+    margin-left: -10px;
+    
+
+}
+h3{
+    font-weight: 600;
+}
+input {
+    width: 325px;
+    outline: 0;
+    border-width: 0 0 1px 0;
+    border-color: black;
+    border-style: solid;
+    margin-bottom: 20px;
+    padding: 5px;
+  }
+
+a{
+    text-decoration: none;
+    font-size: 12px;
+    color: #0d69af;
+}
+button{
+    display: block;
+    /* transform:translate(250px,70px); */
+    border: none;
+    background-color: #0d69af;
+    padding: 7px 35px;
+    color: white;
+    font-size: 15px;
+    position: relative;
+    top: 62px;
+    left: 230px;
+   
+    
+}
+.container2{
+    height: 48px;
+    width: 432px;
+    background-color: white;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    padding-left: 44px;
+    box-sizing: border-box;
+}
+
+.key{
+    /* margin-left: 30px; */
+    height: 20px;
+    width: 25px;
+    padding-top:2px;
+}
+.con{
+    
+    font-weight: normal;
+    display: inline-block;
+    font-size: 15px;
+    margin: 10px;
+}
+
+.container2:hover{
+    background-color: rgb(219, 213, 213);
+    cursor: pointer;
+}
+a:hover{
+    text-decoration: grey solid underline;
+    color: grey;
+}
+button:hover{
+    cursor: pointer;
+    background-color:#155586;
+}
+
+#foot{
+    position: fixed;
+    bottom:0px;
+    right:0px;
+    display: flex;  
+    justify-content:space-between;
+    text-decoration: none;
+   
+    
+    width: 220px;
+}
+#foot a{
+    color: white;
+}

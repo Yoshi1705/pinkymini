@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles5.css">
+</head>
+<body>
+    <header>
+        <div class="gx1">
+            <a href="home.html"><img src="gxlogo.png" alt=""></a>
+            <!-- <img class="logog" src="gxlogo.png" alt=""> -->
+            <div class="gx12">
+                <div class="home"><a href="mycourse.html">Home</a></div>
+                <div class="home"><a href="home.html">My courses</a></div>
+                
+                
+            </div>
+        </div>
+        <div class="icons">
+            <svg class="bell" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bell-fill" viewBox="0 0 16 16">
+                <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2m.995-14.901a1 1 0 1 0-1.99 0A5 5 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901"/>
+              </svg>
+              <svg class="bell" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-fill" viewBox="0 0 16 16">
+                <path d="M8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6-.097 1.016-.417 2.13-.771 2.966-.079.186.074.394.273.362 2.256-.37 3.597-.938 4.18-1.234A9 9 0 0 0 8 15"/>
+              </svg>
+              <div class="pf12">
+                <img class="pf" src="pf.jpg" alt="">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+                  </svg>
+              </div>    
+        </div>
+    </header>
+    <hr class="hor">
+    <main>
+      <div class="mcontainer">
+        <h1>Welcome back Siva Narendra ! 👋</h1>
+        <h3>Course overview</h3>
+        <hr class="hor">
+        <div class="select-menu">
+        <select class="category" name="category" id="category">
+          <option value="">All</option>
+          <option value="in progress">In progress</option>
+          <option value="Future">Future</option>
+          <option value="Past">Past</option>
+          <option value="Starred">Starred</option>
+          <option value="Removed from view">Removed from view</option>
+        </select>
+        <input type="text" placeholder="Search">
+        <select name="cousre-name" id="course-name" >
+          <option value="">Sort by course name</option>
+          <option value="last-accessed">Sort by last accessed</option>
+        </select>
+        <select name="view" id="view">
+          <option value="">Card</option>
+          <option value="List">List</option>
+          <option value="Summary">Summary</option>
+        </select>
+        </div>
+        <div class="card" id="cardd">
+          <img class="image" src="image.png" alt="">
+          <div class="desc">
+            <a href="">Internship- Batch2</a>
+            <p>Category 1</p>
+          </div>
+          <svg class="more"  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+            <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"/>
+          </svg>
+        </div>
+        <div class="nocourses" id="nocourses">
+          <img src="No courses.png" alt="">
+        </div>
+      </div>
+    </main>
+    <footer>
+      <svg id="query" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-question-lg" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M4.475 5.458c-.284 0-.514-.237-.47-.517C4.28 3.24 5.576 2 7.825 2c2.25 0 3.767 1.36 3.767 3.215 0 1.344-.665 2.288-1.79 2.973-1.1.659-1.414 1.118-1.414 2.01v.03a.5.5 0 0 1-.5.5h-.77a.5.5 0 0 1-.5-.495l-.003-.2c-.043-1.221.477-2.001 1.645-2.712 1.03-.632 1.397-1.135 1.397-2.028 0-.979-.758-1.698-1.926-1.698-1.009 0-1.71.529-1.938 1.402-.066.254-.278.461-.54.461h-.777ZM7.496 14c.622 0 1.095-.474 1.095-1.09 0-.618-.473-1.092-1.095-1.092-.606 0-1.087.474-1.087 1.091S6.89 14 7.496 14"/>
+      </svg>
+    </footer>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
