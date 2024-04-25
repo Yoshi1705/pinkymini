@@ -5,20 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GalaxESolutions</title>
     <link rel="stylesheet" href="sytles2.css">
+    <script>
+        function validate(){
+            var password=document.getElementById("pass")
+            if(password.value == ''){
+                alert("Enter your password")
+                return false;
+            }
+            else if(password.value == 'Siva2002'){
+                return true;
+            }
+            else{
+                alert("Incorrect Password !")
+                return false;
+            }
+        }
+
+    </script>
 </head>
 <body id="">
     <main>
     <div class="container">
         <div class="logo"><img src="GalaxESolutions.png" alt=""></div>
-        <h3>password</h3>
-        <form action="/action.php">
-            <input type="password" name="pass" placeholder="enter your password">
-            <a href="">Can't access your account?</a>
-            
+        <div class="back">
+            <a href="index.html">
+                <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-short" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5"/>
+                  </svg>
+            </a>
+              <div class="output"  id="output"></div>
+        </div>
+        
+        <div class="heading">Enter password</div>
+        <form onsubmit="return validate()" action="/index3.html">
+            <input type="password" name="pass" placeholder="password" id="pass">
+            <a href="">Forgot my password</a>
+            <button type="submit">Sign&nbsp;in</button>
         </form>
-        <a href="index3.html"><button>Submit</button></a>
+        
        
     </div>
     </main>
+    <script>
+        // const out1=document.getElementById('output')
+        // out1.innerHTML=name.value
+        // Extracting email from URL parameter
+        const params = new URLSearchParams(window.location.search);
+        const email = params.get('email');
+
+        // Displaying email on the page
+        document.getElementById('output').textContent =email;
+        
+    </script>
 </body>
 </html>

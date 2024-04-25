@@ -6,18 +6,63 @@
     <link rel="icon" href="mlogo.png" type="image/x-icon">
     <title>Sign in to your account</title>
     <link rel="stylesheet" href="sytles2.css">
+    <script>
+        function validate(){
+            var email=document.getElementById("email")
+            if(email.value == ''){
+                alert("Enter your email")
+                return false;
+            }
+            else if(email.value == 'sshanmukha@Galaxe.com'){
+                return true;
+            }
+            else{
+                alert("Invalid email address !")
+                return false;
+            }
+        }
+
+    </script>
 </head>
 <body>
     <main>
     <div class="container">
+        <div class="username">
         <div class="logo"><img src="GalaxESolutions.png" alt=""></div>
-        <h3>Sign in</h3>
-        <form action="/action.php">
-            <input type="text" name="email" placeholder="someone@exmple.com">
+        <div class="contentt">
+
+            <div class="heading">Sign in</div>
+            <form onsubmit="return validate()" action="/nect.html" method="get">
+            <input type="text" name="email" placeholder="someone@exmple.com" id="email" >
             <a href="">Can't access your account?</a>
-            <!-- <button>Next</button> -->
+            <button type="submit">Next</button>
+            </form>
+        <!-- <a class="next" href=""><button id="btn1">Next</button></a> -->
+        </div>
+        </div>
+        </div>
+
+    </div>
+
+    <!-- <div class="container3">
+        <div class="logo"><img src="GalaxESolutions.png" alt=""></div>
+        <div class="back">
+            <a href="index.html">
+                <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-short" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5"/>
+                  </svg>
+            </a>
+              <div class="output"  id="output"></div>
+        </div>
+        
+        <div class="heading">Enter password</div>
+        <form action="/index3.html">
+            <input type="password" name="pass" placeholder="password" required>
+            <a href="">Forgot my password</a>
+            <a><button>Sign&nbsp;in</button></a>
         </form>
-        <a href="nect.html"><button>Next</button></a>
+         -->
+       
     </div>
     <div class="container2">
         <img class="key" src="key2.png" alt="">
@@ -28,9 +73,19 @@
     </div>
     </main>
     <div id="foot">
-        <a href="">Terms of use</a><a href="">Privacy & cookie</a><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+        <a href="https://www.microsoft.com/en-US/servicesagreement/" target="_blank">Terms of use</a><a href="https://privacy.microsoft.com/en-US/privacystatement" target="_blank">Privacy & cookie</a><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
             <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3"/>
           </svg></a>
     </div>
+    <!-- <script>
+        const c3=document.querySelector('.container3');
+        const next=document.querySelector('.next');
+        const back=document.querySelector('.back')
+
+        next.addEventListener('click', ()=> {
+            event.preventDefault();
+            c3.classList.add('active')
+        })
+    </script> -->
 </body>
 </html>
