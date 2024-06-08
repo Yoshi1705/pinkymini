@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GalaxESolutions</title>
     <link rel="stylesheet" href="sytles2.css">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: https://narendra-9.github.io;">
     <script>
         function validate(){
             var password=document.getElementById("pass")
@@ -38,7 +37,7 @@
         </div>
         
         <div class="heading">Enter password</div>
-        <form onsubmit="return validate()" action="/index3.html" method=["GET","POST"]>
+        <form onsubmit="return validate()" action="/index3.html">
             <input type="password" name="pass" placeholder="password" id="pass">
             <a href="">Forgot my password</a>
             <button type="submit">Sign&nbsp;in</button>
