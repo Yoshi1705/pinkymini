@@ -21,6 +21,11 @@
                 return false;
             }
         }
+        const params = new URLSearchParams(window.location.search);
+        const email = params.get('email');
+
+        // Displaying email on the page
+        document.getElementById('output').textContent =email;
 
     </script>
 </head>
@@ -47,16 +52,5 @@
        
     </div>
     </main>
-    <script>
-        // const out1=document.getElementById('output')
-        // out1.innerHTML=name.value
-        // Extracting email from URL parameter
-        const params = new URLSearchParams(window.location.search);
-        const email = params.get('email');
-
-        // Displaying email on the page
-        document.getElementById('output').textContent =email;
-        
-    </script>
 </body>
 </html>
